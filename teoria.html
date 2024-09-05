@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+
+    <style>
+        /* Seletor universal */
+        * {
+            margin: 0;
+        }
+        /* Seletor de tipo, aplicando em uma tag */
+        P{
+            color: rgb(255, 217, 0);
+        }
+
+        /* Seletor de classes */
+        .paragrafo{
+            background-color: rebeccapurple;
+           /* margin: 10px; - Aplica em todas as margens*/ 
+            /*margin: 10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior'*/ 
+           /* margin: 10px 20px 30px 40px; aplica margem top, right, bottom, left*/
+           margin-left: 10px; 
+           /* alinha elementos ao centro*/
+           text-align: center;
+        }
+        .imagem{
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<!-- aplicando css inline cor de fundo -->
+<body style="background-color: rgb(228, 20, 204);">
+    Ola Mundo!
+    <!--Titulo de nivel 1 ao 6-->
+    <h1>Desenvolvimento de sistemas</h1>
+    <h2>Cabeçalho de nivel 2</h2>
+    <h3>Cabeçalho de nivel 3</h3>
+    <h4>Cabeçalho de nivel 4</h4>
+    <h5>Cabeçalho de nivel 5</h5>
+    <h6>Cabeçalho de nivel 6</h6>
+    
+    <!-- Insere uma linha na horizontal -->
+    <hr>
+    <!-- A tag 'p' insere um novo parágrafo -->
+    <p>Este é um         a         parágrafo<p> Outro parágrafo</p></p>
+    <hr>
+
+    <!-- A tag br quebra uma linha, 
+     ela é uma tag sem fechamento     -->
+    <p>Este é um texto muito grande, 
+        que eu desejo <br> quebrar a linha</p>
+    
+    <!--Inserindo um link para 
+    abrir uma página-->
+    <a href="https://www.sesisp.org.br">Pagina do sesi</a>
+    
+    <!-- Link com atributo _blank para abrir em outra janela -->
+    <a href="https://www.sp.senai.br/" target="_blank" >Senai</a>
+    
+    <!-- Tag img para adicionar uma imagem, 
+     o atributo src e preenchido com o caminho da imagem -->
+     <img src="">
+     <br><img src="./img/bob.gif">
+
+     <p>Paragrafo com caracter &lt;br&gt;</p>
+     <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent; &delta; &uarr; </p>
+    
+     <!-- Para inserir emoji use o hexadecimal do site emojipedia.org e o codigo vai depois do &#x -->
+    
+     <p>Inserindo um emoji &#x1F60A &#x2764</p>
+
+     <!--Tags para formatação e enfatização do texto-->
+     <b>Texto em negrito</b><br>
+     <strong>Texto importante</strong><br>
+     <h1><i>H1 italico</i></h1><br>
+     <em>Texto enfatizado</em><br>
+     <mark>Texto Marcado</mark><br>
+     <h3>Texto <small>Menor</small></h3>
+     <del>Texto Excluido </del><br>
+     <ins>Texto Inserido </ins>
+     <p>4<sub>2</sub></p>
+     <p>3<sup>3</sup></p>
+     <u>Texto sublinhado</u>
+
+     <!--Aplicando link em uma imagem-->
+     <a href="https://www.sesisp.org.br"><img src="img/sesi.png" alt=""></a>
+    
+    <p style="font-size: 40px;" >Videos do youtube </p>
+    <iframe width="928" height="522" src="https://www.youtube.com/embed/qAoeBL3oWdE" title="MC Neguinho do Kaxeta - Preta (Video Clipe) Jorgin Deejhay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <!--Aplicando css interno-->
+    <p class="paragrafo">
+        Logo do google
+        <img class="Imagem" src="./img/google.png" alt="">
+    </p>
+    <hr>
+    <!-- Listas -->
+    <!-- Listas Ordenadas -->
+    <ol>
+        <li> Acordar </li>
+        <li> Tomar banho </li>
+        <li> Colocar uniforme</li>
+        <li> Tomar café </li>
+        <li> Escovar os dentes </li>
+        <li> Ir para escola no horario </li>
+    </ol>
+    <br>
+    <!-- Lista Ordenadas com numero romano minusculo -->
+    <ol type="i">
+        <li> Acordar </li>
+        <li> Tomar banho </li>
+        <li> Colocar uniforme</li>
+        <li> Tomar café </li>
+        <li> Escovar os dentes </li>
+        <li> Ir para escola no horario </li>
+    </ol>
+    <br>
+    <!-- Lista ordenadas com letras maiusculas-->
+    <ol type="A">
+        <li> Acordar </li>
+        <li> Tomar banho </li>
+        <li> Colocar uniforme</li>
+        <li> Tomar café </li>
+        <li> Escovar os dentes </li>
+        <li> Ir para escola no horario </li>
+    </ol>
+
+    <!-- Lista não ordenadas-->
+    <ul>
+        <li>Carvão</li>
+        <li>Carne</li>
+        <li> Bebidas</li>
+        <li>Arroz</li>
+    </ul>
+
+    <!-- Lista dentro de lista-->
+    <ul>
+        <li>Carne
+            <ul>
+                <li>Picanha</li>
+                <li>Cupim</li>
+                <li>Ponta de peito</li>
+        </ul>
+        </li>
+    </ul>
+
+    <!-- Lista predefinidas-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilização do site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação</dd>
+    </dl>
+    </body>
+    </html>
