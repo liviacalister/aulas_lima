@@ -205,5 +205,79 @@
             </td>
         </tr>
        </table>
+       <p>Trabalhando com formulários</p>
+       <form class="formulario">
+        <label>Nome</label>
+        <!--insere um campo digitavel do tipo texto-->
+        <input type="text"><br>
+        <label>Sobrenome</label>
+        <input type="text" class="input-nome">
+        <!-- tipo senha -->
+         <br><label>Senha</label>
+         <input type="password" placeholder="Digite a senha">
+         <input type="button" value="clique aqui" class="botao">
+         <br>
+         <!-- incluindo checkbox(opções)-->
+          <input type="checkbox" class="checar"> eu tenho uma bicicleta <br>
+          <input type="checkbox" class="checar"> eu tenho uma moto <br>
+          <input type="checkbox" class="checar"> eu tenho um carro <br>
+
+          <!-- incluindo input de cor-->
+           <input type="color" value="#000000">
+           <br><label>data de nascimento</label>
+           <input type="date" name=""id-"">
+           <input type="datetime-local" name=""id-"">
+
+           <!-- tipo email -->
+            <input type="email" placeholder="digite seu email" class="email">
+
+            <!-- incluindo input para selecionar arquivo-->
+             <input type="file">
+
+            <!-- input de seleção-->
+             <select class="selecao">
+                <!-- o atributo value enviara o valor do item selecionado para o servidor-->
+                <option value="">Selecione a escolaridade</option>
+                <option value="primeiro colegial">1° médio</option>
+                <option value="segundo colegial">2° médio</option>
+                <option value="terceiro colegial">3° médio</option>
+             </select>
+
+             <select>
+                <!-- o atributo value enviara o valor do item selecionado para o servidor-->
+                <option value="">Selecione a escolaridade</option>
+                <option value="primeiro colegial">1° médio</option>
+                <option value="segundo colegial">2° médio</option>
+                <option value="terceiro colegial">3° médio</option>
+             </select>
+
+             <!-- criando input radio button-->
+              <p>Radio button</p>
+              <input type="radio" name="tamanho">pequeno
+              <input type="radio" name="tamanho" checked>medio
+              <input type="radio" name="tamanho">grande
+              <input type="radio" name="tamanho">outra
+              <br>
+
+              <p>Radio button</p>
+              <input type="radio" name="tamanho" class="radio">pequeno
+              <input type="radio" name="tamanho" checked class="radio">medio
+              <input type="radio" name="tamanho" class="radio">grande
+              <input type="radio" name="tamanho" class="radio">outra
+
+              <!-- cria um grupo de componentes do formulário-->
+               <fieldset>
+                <legend>Descrição</legend>
+                <textarea name=""id-"">
+
+                </textarea>
+               </fieldset>
+
+               <!-- botao de enviar-->
+                <input type="submit" value="enviar">
+
+               <!-- botao de limpar ou resetar-->
+                <input type="reset" value="limpar">
+       </form>
 </body>
 </html>
