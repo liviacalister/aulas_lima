@@ -22,3 +22,70 @@
     text-align: center;
     color: aliceblue;
 }
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.flex > div > img{
+    height: 50px;
+    width: 50px;
+}
+
+.div-coluna{
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+}
+.secao{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    /*coloca um espaço entre os elementos*/
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.secao-imagem{
+    width: 150px;
+    height: 150px;
+}
+.alinhar-esquerda{
+    display: flex;
+    flex-direction: row;
+    /*alinha o elemento ao inicio */
+    justify-content: flex-start;
+}
+.alinhar-centro{
+    display: flex;
+    flex-direction: row;
+    /*alinha o elemento no centro*/
+    justify-content: center;
+}
+.alinhar-direita{
+    display: flex;
+    flex-direction: row;
+    /*alinha o elemento ao final*/
+    justify-content: flex-end;
+}
+.alinhar-entre{
+    display:flex ;
+    flex-direction: row;
+    /* Aloca os elementos nas pontas e ajusta os elementos do centro */
+    justify-content: space-between;
+}
+.alinhar-redor{
+    display: flex;
+    flex-direction: row;
+    /*Distribui os itens com espaço ao redor deles*/
+    justify-content: space-around;
+}
+.alinhar-coluna{
+    background-color: blueviolet
+}
+.alinhar-itens-centro{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: chocolate;
+    align-items: center;
+    justify-content: space-between;
+}
